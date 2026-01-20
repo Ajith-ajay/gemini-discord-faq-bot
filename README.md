@@ -30,7 +30,7 @@ A powerful, intermediate-level Discord bot that uses the Google Gemini API to an
 1.  **Clone the repository:**
     ```sh
     git clone https://github.com/Ajith-ajay/gemini-discord-faq-bot.git
-    cd gemini-discord-bot
+    cd gemini-discord-faq-bot
     ```
 
 2.  **Install dependencies:**
