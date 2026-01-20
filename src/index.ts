@@ -24,7 +24,7 @@ async function start() {
     await commandHandler.loadCommands();
     commandHandler.registerInteractionHandler();
 
-    client.once('ready', () => {
+    client.once('clientReady', () => {
       console.log(`Logged in as ${client.user?.tag}!`);
     });
 

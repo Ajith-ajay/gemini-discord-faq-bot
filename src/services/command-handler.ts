@@ -11,7 +11,8 @@ export class CommandHandler {
 
   public async loadCommands() {
     const commandsPath = path.join(__dirname, '../commands');
-    const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.ts'));
+    const fileExtension = __filename.endsWith('.ts') ? '.ts' : '.js';     //.ts for development and .js for production
+    const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(fileExtension));
 
     for (const file of commandFiles) {
       const filePath = path.join(commandsPath, file);
