@@ -75,13 +75,13 @@ This is the recommended way to run the bot in a production environment.
 
 1.  **Build the Docker image:**
     ```sh
-    docker build -t gemini-discord-bot .
+    docker build -t gemini-discord-faq-bot .
     ```
 
 2.  **Run the Docker container:**
     This command securely passes your `.env` file to the container and runs it in the background.
     ```sh
-    docker run --env-file ./.env -d --name my-gemini-bot gemini-discord-bot
+    docker run --env-file ./.env -d --name my-gemini-bot gemini-discord-faq-bot
     ```
 
 ### Managing the Docker Container
